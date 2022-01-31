@@ -8,8 +8,10 @@ const app = (args) => {
         const movie = new Movie(args.movie, args.actor);
         movie.add();
         console.log(movieArr);
-    } else {
-        console.log("N/A");
+    } else if (args.multiple) {
+        const movie = new Movie(args.movie, args.actor, args.year, args.age);
+        movie.add()
+        console.log(movieArr);
     }
 
 };
